@@ -1,0 +1,354 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/* Color used your own to help for advance */
+:root{
+    --primary-color:#ab2c48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --text-color:#555;
+    --text-grey:#999;
+    --text-orange:#F7622C;
+    --primary-font:'Roboto','sans-serif';
+    --secondary-font:'Quicksand','sans-serif';
+}
+
+/* Header and Para Style in advance  */
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    /* color: var(--secondary-color); */
+    /* margin-bottom: 3rem; */
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-orange);
+    /* color: var(--secondary-color); */
+    /* font-family: var(--secondary-font); */
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+h4{
+    font-size: 18px;
+    /* font-weight: 800; */
+    /* color: var(--secondary-color); */
+    /* font-family: var(--secondary-font); */
+    text-transform: capitalize;
+    line-height: 0.5rem;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 700;
+    /* color: var(--secondary-color); */
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    /* line-height: 0.5rem; */
+}
+p{
+    font-size: 1rem;
+    /* font-weight: 400; */
+    /* line-height: 1.75rem; */
+    /* letter-spacing: 1px; */
+}
+/* Used all Media as per Required */
+@media screen and (max-width:767px){
+    .CopyRight h3{
+        font-size: 1rem;
+        opacity: 0.8;
+        font-weight: 400;
+    }
+     #inp-cu{
+        padding: 6px 15px;
+        border-radius: 25px;
+        min-width: 100px;
+        margin-bottom: 12px;
+        font-size: 1rem;
+    }
+    #img3{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size:2rem;
+        line-height: 2.0625rem;
+    }
+}
+#nav1{
+    background-color: #252525;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+    /* text-align: center; */
+}
+
+#nav1 ul li{
+    padding-left: 10px;
+    /* color: var(--primary-color); */
+}
+#nav1 li .clr{
+    color: #fd6027;
+}
+#nav1 li a{
+    color: white;
+    font-size: 10px;
+}
+#btn1{
+    border-radius: unset;
+    /* height: 30px; */
+    padding: 5px 10px;
+    /* font-size: medium; */
+    border: unset;
+    outline: unset;
+}
+#btn1:hover{
+    /* color: var(--primary-color); */
+    background-color: #F7622C;
+    
+
+    
+}
+#navbarSupportedContent{
+    text-align: center;
+}
+
+#navbarSupportedContent .nav-link:hover{
+    color:  #F7622C;
+}
+
+#nav1 .img1{
+    max-width: 160px;
+    height: 25px;
+    /* border: 1px solid red; */
+    /* box-shadow: 2px 2px 5px red; */
+}
+
+#nav1 .img2{
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+}
+
+.hero-sec{
+    background: url('./images/banner-bg.png') no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    max-height: 900px;
+    padding-right: 0;
+}
+#hero #out{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #252525;
+}
+
+#hero #cs{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+#hero p{
+    color: white;
+}
+
+#aboutUs #img3{
+    height: 350px;
+    width: 340px;
+}
+#aboutUs p{
+    opacity: 0.8;
+}
+
+#gallery #imgs{
+    width: 350px;
+    height: 340px;
+}
+
+#gallery #img-se{
+    position: absolute;
+    font-size: 100px;
+    /* height: 150px;
+    width: 150px; */
+    z-index: 111;
+    left:140px;
+    top:110px;
+    /* box-shadow: 2px 2px 4px rgb(255, 47, 0); */
+    display: none;
+}
+#gallery #imgs:hover #gallery #img-se{
+    display: block;
+}
+#gallery #imgs:hover{
+    opacity: 0.6;
+}
+#gallery #rel{
+    position: relative;
+}
+#gallery{
+    margin-top:90px;
+}
+
+#gallery #btn1{
+    padding: 8px 25px;
+
+}
+#services #cardImg{
+    height: 50px;
+    width: 50px;
+}
+/* #services #cardImg1{
+    height: 150px;
+    width: 50px;
+} */
+#services #btn1{
+    width: 150px;
+    padding: 8px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#services h4{
+    font-size: 30px;
+}
+
+#services{
+    background: url('./images/services-bg.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+    min-height: 200px;
+} 
+
+#services #ser #card1{
+    /* display: block; */
+    background-color: var(--text-orange);
+    color: white;
+    transition: .5s;
+}
+#services #ser #card1:hover{
+    /* display: block; */
+    background-color: white;
+    color: black;
+}
+#services #ser #card1:hover #btn1{
+    display: block;
+}
+
+#testimonal #btn123{
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+#testimonal #mt{
+    margin-top: 150px;
+}
+
+#testimonal .img-fluid{
+    max-height: 200px;
+    min-width: 100%;
+}
+
+#co{
+    color: var(--text-orange);
+}
+
+#test p{
+    font-size: 10px;
+}
+
+#ContactUs #bg-cu{
+    background: url('./images/img-9.png') no-repeat center center/cover;
+}
+
+#ContactUs #inp-cu{
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 25px;
+    width: 400px;
+    margin-bottom: 17px;
+    font-size: 1.5rem;
+}
+#ContactUs #inp-cu:focus{
+    outline: unset;
+    border: unset;
+}
+
+#ContactUs #btn-cu{
+    padding: 12px 30px;
+    width: 150px;
+    border-radius: unset;
+    border-radius: 25px;
+    /* height: 30px; */
+    /* padding: 5px 10px; */
+    /* font-size: medium; */
+    border: unset;
+    outline: unset;
+    background-color: var(--text-orange);
+    color: white;
+    transition: 0.3s ease;
+}
+#ContactUs #btn-cu:hover{
+    color: black;
+    background-color: white;
+}
+
+#footer{
+    background-color:#252525;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+} 
+
+#footer h3{
+    font-weight: 700;
+} 
+
+#footer a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    padding-bottom: 10px;
+}
+#footer span{
+    transition: 0.3s ease;
+}
+#footer a:hover,#footer span:hover{
+    /* text-decoration: none; */
+    color: var(--text-orange);
+}
+
+#footer .pt{
+    line-height: 1px;
+}
+
+#footer #img{
+    height: 19px;
+    width: 13px;
+}
+
+#footer #imgss{
+    height: 15px;
+    width: 15px;
+}
+.CopyRight h3{
+    font-size: 1.5rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.CopyRight h3:hover em{
+    /* border-bottom: 2px dashed red; */
+    color: red;
+}
